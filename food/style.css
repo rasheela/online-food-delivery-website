@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav u1{
+    list-style: none;
+
+}
+section nav u1 li{
+    display : inline-block;
+    margin:  0 15px;
+}
+
+section nav u1 li a{
+    text-decoration: goldenrod;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    
+
+}
+
+section nav u1 li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e76610;
+    display: block;
+    transition: 0.2s,linears;
+
+}
+
+section nav u1 li a:hover::after{
+    width: 100px;
+
+
+}
+
+section nav u1 li a:hover{
+    color:#e76610;
+
+}
+ section nav .icon i{
+    font-size: 18px;
+    color:black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition:0.3s ;
+ }
+
+ section nav .icon i:hover{
+    color: #e60d43;
+    
+ }
+
+ section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+ }
+
+ section .main .men_text h1{
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+    left:20px;
+ }
+
+ section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #e76610;
+    font-family: mv boli;
+     line-height: 22px;
+     font-size: 70px;
+}
+
+section .main .main_image img{
+    width:600px;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    line-height: 22px;
+
+}
+
+section .main_btn{
+    background: #e76610;
+    
+    position: relative;
+    left: 50px;
+    top: 130px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: white;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+/*about*/
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .about_main .image img{
+width: 800px;
+position: relative;
+top: 60px;
+
+
+}
+.about .about_main .about_text h1 span{
+ color: #e76610;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 40px;
+    position: relative;
+    bottom: 40px;
+}
+
+.about .about_main .about_text h3{
+
+    font-size: 30px;
+    margin: 0,0,50px,0;
+}
+
+.about .about_main .about_text p{
+    width: 600px;
+    text-align: justify;
+    margin-right: 20px;
+    line-height: 22px;
+}
+
+.about .about_btn{
+    background: #e76610;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 55px;
+    top: 80px;
+
+}
+
+
+/*menu*/
+.menu{
+    width: 300px;
+    padding: 70px ;
+}
+
+.menu h1{
+
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.menu h1 span{
+    color: #e76610;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e76610;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.menu_box{
+    display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap:15px;
+
+}
+.menu_card{
+    width:300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.menu_card>.menu_image{
+    padding:12px;
+}
+
+.menu_card>.menu_info{
+    padding:12px;
+
+}
+.menu_card>.menu_info h2{
+    color: #e76610;
+}
+.menu_info>button{
+    font-size: 1rem;
+    background: #e76610;
+    border-color:#e76610;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.menu_info>button:hover{
+    color: #e76610;
+    background:white;
+    font-weight:600;
+}
+
+
+
+
+/**gallary**/
+.gallery{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallery h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h1 span{
+    margin-left: 15px;
+    color: #e76610;
+    font-family: mv boli;
+
+}
+
+.gallery h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e76610;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.food{
+    margin: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+}
+
+
+/*review*/
+
+.review{
+    width:100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #e76610;
+    font-family: mv;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e76610;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+.review .review_box .review_card{
+    width: 350px;
+    height: 485px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+    padding:20px;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20%;
+    border:5px solid #eee2e2;
+
+}
+.review .review_box .review_card .review_text .review_icon{
+    color: #e60d43;
+    transition: 0.4s;
+}
